@@ -1,0 +1,26 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+
+/*changes the size of input boxes*/
+input {
+    width: 6em;
+    padding: .5em;
+    margin: .5em;
+}
+
+/*aligns the input boxes in the form*/
+form {
+    display: inline-block;
+    text-align: right;
+}
+
+/*Centers the photo*/
+img {
+    padding-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
