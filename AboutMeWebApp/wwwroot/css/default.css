@@ -24,3 +24,8 @@ img {
     margin-right: auto;
     width: 50%;
 }
+
+a {
+    padding: 1em;
+    font-weight: bold;
+}
