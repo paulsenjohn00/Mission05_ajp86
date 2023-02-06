@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model GradeCalcModel;
+
+
+<form method="post">
+    <label>Assignments: </label>
+    <input id="assignments" type="number" step="any" min="0" max="100" asp-for="assignments"/><br />
+    <label>Quizes: </label>
+    <input id="quizes" type="number" step="any" min="0" max="100" asp-for="quizes"/><br />
+    <label>Group Projects: </label>
+    <input id="groupProjects" type="number" step="any" min="0" max="100" asp-for="groupProjects"/><br />
+    <label>INTEX: </label>
+    <input id="intex" type="number" step="any" min="0" max="100" asp-for="intex"/><br />
+    <label>Exams: </label>
+    <input id="exams" type="number" step="any" min="0" max="100" asp-for="exams"/><br />
+    <label>Extra Credit: </label>
+    <input id="extraCredit" type="number" step="any" min="0" max="100" asp-for="extraCredit"/><br />
+    <input type="submit" id="calculate" value="Calculate" />
+    <!--where the javascript function will be returned-->
+    <div asp-validation-summary="All"></div>
+    <!--Prints letterGrade and percentage grade-->
+    <p id="txtReturn"></p>
+</form>
+
+<!--Bringing in bootstrap, jquery, and javascript-->
+
+<script src="js/JavaScript.js"></script>

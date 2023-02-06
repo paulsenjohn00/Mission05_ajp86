@@ -11,6 +11,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/hiking.ico" />
 </head>
 <body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
     <div>
         @RenderBody()
     </div>
